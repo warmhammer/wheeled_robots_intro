@@ -2,9 +2,8 @@
 При чтении этой инструкции стоит внимательно читать и её саму, и вывод git. Если что-то пошло не так, то всегда можно спросить в чате.
 
 ## Подготовка
-1) Необходимо [форкнуть](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#forking-a-repository) репозиторий курса, сделать его приватным и добавить пользователя `warmhammer` (Settings -> Collaborators). Так мы создаем копию репозитория в нашем аккаунте.
 
-2) Для того, чтобы иметь возможность сохранять изменения кода на вашем компьютере на GitHub, нужно
+1) Для того, чтобы иметь возможность сохранять изменения кода на вашем компьютере на GitHub, нужно
 "сообщить" GitHub`у каким образом идентифицировать ваш компьютер. Для этого существует поняние ssh-ключей. Для генерации пары открытый/закрытый ssh-ключ исполните следующие команды (либо посмотрите этот [туториал](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux)):
 ```
 $ mkdir -p ~/.ssh
@@ -40,14 +39,39 @@ $ ls ~/.ssh
 id_rsa id_rsa.pub
 ```
 
-3) Необходимо скопировать содержимое файла `id_rsa.pub` на GitHub:
+2) Необходимо скопировать содержимое файла `id_rsa.pub` на GitHub:
 ```
 $ cat ~/.ssh/id_rsa.pub
 ssh-rsa ...
 ```
 [Добавляем ключ](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=linux) в аккаунт.
 
-4) [Клонируем репозиторий](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) на локальную машину.
+3) Создаем приватный "форк" (можно следовать [туториалу](https://docs.github.com/ru/repositories/creating-and-managing-repositories/duplicating-a-repository)). 
+
+Прежде всего в своем аккаунте на GitHub создает пустой приватный репозиторий (лучше использовать название `wheeled_robots_intro` во избежание путаницы). Добавляем пользователя `warmhammer` (Settings -> Collaborators).
+
+Открываем bash, переходим в рабочую папку и создаем "чистый" клон репозитория.
+```
+$ git clone --bare https://github.com/warmhammer/wheeled_robots_intro.git
+```
+
+Отправляем зеркало в новый репозиторий:
+```
+$ cd wheeled_robots_intro.git
+$ git push --mirror https://github.com/<USER>/wheeled_robots_intro.git
+```
+
+Удаляем временный локальный репозиторий, созданный ранее:
+```
+$ cd ..
+$ rm -rf wheeled_robots_intro.git
+```
+
+4) [Клонируем репозиторий](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo#cloning-your-forked-repository) на локальную машину:
+
+```
+$ git clone git@github.com:<USER>/wheeled_robots_intro.git
+```
 
 ## Выполнение ДЗ
 
