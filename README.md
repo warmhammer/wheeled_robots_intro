@@ -40,10 +40,10 @@
 
 ## Расписание занятий
 
-| №         | Тема              | Дата                  | Материалы |
-|-----------|-------------------|-----------------------|-----------|
-| `1`       |                   | 7.07 (Sun), 18:00     | [video](https://youtu.be/gpUaZDVf8Ms), [slides](https://docs.google.com/presentation/d/1bFtvqoGm9mmw2em5YF0iMlQTd0qG3hPaZahPpMy67Y0/edit?usp=sharing) |
-| `2`       |                   | 10.07 (Wed), 18:00    |           |
+| №         | Тема                              | Дата                  | Материалы |
+|-----------|-----------------------------------|-----------------------|-----------|
+| `1`       | linux, git \| python classes      | 7.07 (Sun), 18:00     | [video](https://youtu.be/gpUaZDVf8Ms), [slides](https://docs.google.com/presentation/d/1bFtvqoGm9mmw2em5YF0iMlQTd0qG3hPaZahPpMy67Y0/edit?usp=sharing) |
+| `2`       | venv, pip, docker \| numpy        | 10.07 (Wed), 18:00    | [video](https://youtu.be/h6uJPCfl3W0), [slides](https://docs.google.com/presentation/d/1K1_GDXQQU-d5Oyx6nJNo5DSLzRZGxVDfatIxMsNJnkQ/edit?usp=sharing) |
 | `3`       |                   | 17.07 (Wed), 18:00    |           |
 | `4`       |                   | 24.07 (Wed), 18:00    |           |
 | `5`       |                   | 31.07 (Wed), 18:00    |           |
