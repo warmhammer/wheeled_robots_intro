@@ -59,4 +59,4 @@
 | `hw-0`    | test assignment   | 8.07 (Mon), 23:59     |
 | `hw-1`    | pure python       | 21.07 (Sun), 23:59    |
 | `hw-2`    | mujoco diff drive | 28.07 (Sun), 23:59    |
-| `hw-e`    | ekf               | 4.08 (Sun), 23:59     |
+| `hw-3`    | ekf               | 4.08 (Sun), 23:59     |
