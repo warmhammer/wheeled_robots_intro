@@ -5,3 +5,5 @@
 Ноутбук домашки находится [здесь](https://github.com/warmhammer/wheeled_robots_intro/tree/main/hw_3/hw_ekf_filter.ipynb). Также вам может пригодиться [семинарский ноутбук](https://github.com/warmhammer/wheeled_robots_intro/tree/main/hw_3/seminar_localization.ipynb).
 
 Максимум за дз - 10 баллов.
+
+Сохраните ноутбук с выводами ячеек. Проследите, чтобы ячейки были выполнены по порядку.
