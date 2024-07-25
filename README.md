@@ -41,11 +41,11 @@
 ## Расписание занятий
 
 | №         | Тема                              | Дата                  | Материалы |
-|-----------|-----------------------------------|-----------------------|-----------|
-| `1`       | linux, git \| python classes      | 7.07 (Sun), 18:00     | [video](https://youtu.be/gpUaZDVf8Ms), [slides](https://docs.google.com/presentation/d/1bFtvqoGm9mmw2em5YF0iMlQTd0qG3hPaZahPpMy67Y0/edit?usp=sharing) |
-| `2`       | venv, pip, docker \| numpy        | 10.07 (Wed), 18:00    | [video](https://youtu.be/h6uJPCfl3W0), [slides](https://docs.google.com/presentation/d/1K1_GDXQQU-d5Oyx6nJNo5DSLzRZGxVDfatIxMsNJnkQ/edit?usp=sharing) |
-| `3`       | robotics algorithms \| ekf        | 17.07 (Wed), 18:00    | [video](https://youtu.be/kOqmsgt9zi0), [slides](https://docs.google.com/presentation/d/1d4qIVaG8D9hKw8Xe37uqkCHtaMiPrJuvaDfccJkUkPI/edit?usp=sharing) |
-| `4`       |                   | 24.07 (Wed), 18:00    |           |
+|-----------|---------------------------------------|-----------------------|-----------|
+| `1`       | linux, git \| python classes          | 7.07 (Sun), 18:00     | [video](https://youtu.be/gpUaZDVf8Ms), [slides](https://docs.google.com/presentation/d/1bFtvqoGm9mmw2em5YF0iMlQTd0qG3hPaZahPpMy67Y0/edit?usp=sharing) |
+| `2`       | venv, pip, docker \| numpy            | 10.07 (Wed), 18:00    | [video](https://youtu.be/h6uJPCfl3W0), [slides](https://docs.google.com/presentation/d/1K1_GDXQQU-d5Oyx6nJNo5DSLzRZGxVDfatIxMsNJnkQ/edit?usp=sharing) |
+| `3`       | robotics algorithms \| ekf            | 17.07 (Wed), 18:00    | [video](https://youtu.be/kOqmsgt9zi0), [slides](https://docs.google.com/presentation/d/1d4qIVaG8D9hKw8Xe37uqkCHtaMiPrJuvaDfccJkUkPI/edit?usp=sharing) |
+| `4`       | camera calibration \| optimization    | 24.07 (Wed), 18:00    | [video](https://youtu.be/f7-pX7tOpj0), [slides](https://docs.google.com/presentation/d/1kR5cs6kO3cLQ04F0g3_MgHIME2nAgP-ZBN5HD5Li6sY/edit?usp=sharing) |
 | `5`       |                   | 31.07 (Wed), 18:00    |           |
 | `6`       |                   | ???  (7.08, Wed)      |           |
 | `7`       |                   | 14.08 (Wed), 18:00    |           |
