@@ -60,3 +60,4 @@
 | `hw-1`    | pure python       | 21.07 (Sun), 23:59    |
 | `hw-2`    | mujoco diff drive | 28.07 (Sun), 23:59    |
 | `hw-3`    | ekf               | 4.08 (Sun), 23:59     |
+| `hw-4`    | camera calib      | 11.08 (Sun), 23:59    |
