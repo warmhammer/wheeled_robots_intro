@@ -46,7 +46,7 @@
 | `2`       | venv, pip, docker \| numpy            | 10.07 (Wed), 18:00    | [video](https://youtu.be/h6uJPCfl3W0), [slides](https://docs.google.com/presentation/d/1K1_GDXQQU-d5Oyx6nJNo5DSLzRZGxVDfatIxMsNJnkQ/edit?usp=sharing) |
 | `3`       | robotics algorithms \| ekf            | 17.07 (Wed), 18:00    | [video](https://youtu.be/kOqmsgt9zi0), [slides](https://docs.google.com/presentation/d/1d4qIVaG8D9hKw8Xe37uqkCHtaMiPrJuvaDfccJkUkPI/edit?usp=sharing) |
 | `4`       | camera calibration \| optimization    | 24.07 (Wed), 18:00    | [video](https://youtu.be/f7-pX7tOpj0), [slides](https://docs.google.com/presentation/d/1kR5cs6kO3cLQ04F0g3_MgHIME2nAgP-ZBN5HD5Li6sY/edit?usp=sharing) |
-| `5`       |                   | 31.07 (Wed), 18:00    |           |
+| `5`       | ros                 | 31.07 (Wed), 18:00    | [video](https://youtu.be/vNQ4BmZ8i2A), [slides](https://docs.google.com/presentation/d/1J6z0YwZLZ6tP3hlSLxahimO6u87USpjpj3sww8npURI/edit?usp=sharing) |
 | `6`       |                   | ???  (7.08, Wed)      |           |
 | `7`       |                   | 14.08 (Wed), 18:00    |           |
 | `8`       |                   | ???                   |           |
