@@ -1,0 +1,72 @@
+version: '3.9'
+name: 'bachelor_semifinal'
+
+services:
+  scene:
+    image: registry.gitlab.com/beerlab/iprofi2024/problem/bachelor/scene:latest
+    container_name: scene_bachelor_semifinal
+    environment:
+      - DISPLAY
+      - XAUTORITY
+      - QT_X11_NO_MITSHM=1
+      - RVIZ_GUI=true
+      - GAZEBO_GUI=true
+    ipc: host
+    stdin_open: true
+    tty: true
+    networks:
+      - general
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /etc/localtime:/etc/localtime:ro
+      - /dev:/dev
+
+  solution:
+    image: registry.gitlab.com/beerlab/iprofi2024/problem/bachelor/base-user:latest
+    entrypoint: ["/bin/bash", "-ci", "cd /ros_ws && catkin build $(catkin list -u -d /ros_ws/src/bachelor) && source devel/setup.bash && roslaunch solution_bachelor start.launch"]
+    container_name: solution_bachelor_semifinal
+    stdin_open: true
+    tty: true
+    environment:
+      - ROS_MASTER_URI=http://scene:11311
+      - DISPLAY
+      - XAUTORITY
+      - QT_X11_NO_MITSHM=1
+      - GUI=true
+    depends_on: 
+      scene:
+        condition: service_healthy
+    networks:
+      - general
+    ipc: host
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /etc/localtime:/etc/localtime:ro
+      - /dev:/dev
+      - ./:/ros_ws/src/bachelor
+  
+  referee:
+    image: registry.gitlab.com/beerlab/iprofi2024/problem/bachelor/local_referee:latest
+    container_name: referee_bachelor_semifinal
+    entrypoint: ["/bin/bash", "-ci", "roslaunch local_referee start_referee_bachelor.launch"]
+    stdin_open: true
+    tty: true
+    environment:
+      - ROS_MASTER_URI=http://scene:11311
+      - GAZEBO_MASTER_URI=http://scene:11345
+    depends_on: 
+      scene:
+        condition: service_healthy
+    networks:
+      - general
+    ipc: host
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /etc/localtime:/etc/localtime:ro
+      - /dev:/dev
+
+networks:
+  general:
+    attachable: true
+    internal: false
+    driver: bridge
