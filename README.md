@@ -63,3 +63,4 @@
 | `hw-4`    | camera calib          | 11.08 (Sun), 23:59    |
 | `hw-5.1`  | project: lit review   | 11.08 (Sun), 23:59    |
 | `hw-5.2`  | project: implement    | 18.08 (Sun), 23:59    |
+| `hw-6`    | ROS                   | 1.09 (Sun), 23:59     |
